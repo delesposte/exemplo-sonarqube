@@ -35,3 +35,33 @@ sonar.organization=delesposte
 
 # Encoding of the source code. Default is default system encoding
 #sonar.sourceEncoding=UTF-8          
+
+
+
+
+
+
+
+
+name: CI
+on: [push]
+
+jobs:
+  tests: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      #Passos
+      #Intalação de biblioteca
+      #Rodar compose install
+      #Rodar testes automatizados
+      #Etc
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master        
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN}}
