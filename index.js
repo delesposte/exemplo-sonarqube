@@ -17,8 +17,9 @@ class Calculadora {
   }
 
   raizQuadrada(n1, n2) {
+    return true;
   }
-  
+
 }
 
 module.exports = { calculadora: new Calculadora() };
