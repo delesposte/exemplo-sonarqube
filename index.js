@@ -8,11 +8,14 @@ class Calculadora {
     return n1 - n2;
   }
 
+  dividir(n1, n2) {
+    return n1 / n2;
+  }
+
+  multiplicar(n1, n2) {
+    return n1 * n2;
+  }
+  
 }
 
-const calculadora = new Calculadora();
-
-console.log(calculadora.somar(10, 10));
-console.log(calculadora.subtrair(10, 10));
-
-module.exports = { calculadora };
+module.exports = { calculadora: new Calculadora() };
