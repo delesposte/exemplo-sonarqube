@@ -16,8 +16,8 @@ class Calculadora {
     return n1 * n2;
   }
 
-  raizQuadrada(n1, n2) {
-    return true;
+  raizQuadrada(n) {
+    return Math.sqrt(n);
   }
 
 }
