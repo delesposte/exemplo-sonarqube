@@ -4,6 +4,10 @@ test('10 + 10 igual 20', () => {
   expect(calculadora.somar(10, 10)).toBe(20);
 })
 
+test('0 + 0 igual 0', () => {
+  expect(calculadora.somar(0, 0)).toBe(0);
+})
+
 test('10 - 10 igual 0', () => {
   expect(calculadora.subtrair(10, 10)).toBe(0);
 })
