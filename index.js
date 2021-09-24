@@ -20,6 +20,10 @@ class Calculadora {
     return Math.sqrt(n);
   }
 
+  seno(n) {
+    return 0;
+  }
+  
 }
 
 module.exports = { calculadora: new Calculadora() };
